@@ -37,7 +37,7 @@ def shop_trip() -> None:
         date = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         print(f"Date: {date}\n"
               f"Thanks, {customer.name}, for your purchase!\n"
-              f"You have bought:")
+              "You have bought:")
         total_product_costs = 0
         for product, amount in customer.product_cart.items():
             price = amount * cheapest_trip.products[product]
